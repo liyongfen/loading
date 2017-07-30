@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta charset="utf-8"/>
+	<title>loading</title>
+	<style>
+		.load{
+			width: 100px;
+			height: 100px;
+			position: relative;
+			margin: 0 auto;
+			margin-top: 200px;
+			font-size: 0;
+			/*background-color: #ddd;*/
+		}
+		.load span{
+			width: 30px;
+			height: 8px;
+			position: absolute;
+			border-radius: 4px 0 0 4px;
+			background-color: lightgreen;
+			display: inline-block;
+			animation: 1.04s load ease infinite;
+		}
+		@keyframes load{
+			0%{
+				opacity: 1;
+			}
+			100%{
+				opacity: 0.2;
+			}
+		}
+		.load span:nth-child(1){
+			left: 0;
+			top: 49%;
+			animation-delay: 0.13s;
+		}
+		.load span:nth-child(2){
+			left: 10%;
+			top: 25%;
+			transform: rotate(45deg);
+			animation-delay: 0.26s;
+		}
+		.load span:nth-child(3){
+			left: 37%;
+			top: 12%;
+			transform: rotate(90deg);
+			animation-delay: 0.39s;
+		}
+		.load span:nth-child(4){
+			right: 7%;
+			top: 25%;
+			transform: rotate(135deg);
+			animation-delay: 0.52s;
+		}
+		.load span:nth-child(5){
+			right: 0;
+			top: 49%;
+			transform: rotate(180deg);
+			animation-delay: 0.65s;
+		}
+		.load span:nth-child(6){
+			right: 7%;
+			bottom: 20%;
+			transform: rotate(225deg);
+			animation-delay: 0.78s;
+		}
+		.load span:nth-child(7){
+			right: 33%;
+			bottom: 12%;
+			transform: rotate(270deg);
+			animation-delay: 0.91s;
+		}
+		.load span:nth-child(8){
+			left: 10%;
+			bottom: 20%;
+			transform: rotate(315deg);
+			animation-delay: 1.04s;
+		}
+	</style>
+</head>
+<body>
+<div class="load">
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
+</body>
+</html>

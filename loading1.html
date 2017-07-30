@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>loading</title>
+	<style>
+		.load{
+			height: 100px;
+			width: 100px;
+			position: relative;
+			margin: 0 auto;
+			margin-top: 100px;
+		}
+		.load span{
+			width: 16px;
+			height: 16px;
+			position: absolute;
+			background-color: lightgreen;
+			border-radius: 50%;
+			opacity: 0.2;
+			transform: scale(0.3);
+			-webkit-animation: 1.04s load ease infinite;
+		}
+		@keyframes load{
+			0%{
+				opacity: 1;
+				transform: scale(1.2);
+			}
+			100%{
+				opacity: 0.2;
+				transform: scale(0.3);
+			}
+		}
+		.load span:nth-child(1){
+			left: 0;
+			top: 42%;
+			animation-delay: 0.13s;
+		}
+		.load span:nth-child(2){
+			left: 13%;
+			top: 13%;
+			animation-delay: 0.26s;
+		}
+		.load span:nth-child(3){
+			left: 42%;
+			top: 0;
+			animation-delay: 0.39s;
+		}
+		.load span:nth-child(4){
+			top: 13%;
+			right: 13%;
+			animation-delay: 0.52s;
+		}
+		.load span:nth-child(5){
+			top: 42%;
+			right: 0;
+			animation-delay: 0.65s;
+		}
+		.load span:nth-child(6){
+			bottom: 13%;
+			right: 13%;
+			animation-delay:0.78s;
+		}
+		.load span:nth-child(7){
+			bottom: 0;
+			right: 42%;
+			animation-delay: 0.91s;
+		}
+		.load span:nth-child(8){
+			bottom:13%;
+			left: 13%;
+			animation-delay: 1.04s;
+		}
+	</style>
+</head>
+<body>
+<div class="load">
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
+</body>
+</html>
